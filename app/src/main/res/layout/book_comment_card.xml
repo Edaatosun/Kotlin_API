@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/gray">
+
+
+    <!-- Ana düzen: Dikey bir düzen ile tüm içeriği sıralar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profil Bölümü: Kullanıcının profil resmi ve adını içerir -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Profil Resmi: Kullanıcının profil fotoğrafını gösterir -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilepicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_login_account"
+                app:strokeWidth="2dp" />
+
+            <!-- Kullanıcı Adı: Profil resminin yanında kullanıcının adını gösterir -->
+            <TextView
+                android:id="@+id/username_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/profilepicture"
+                android:text="Person Name"
+                android:textStyle="bold"
+                android:textColor="#D3D3D3"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <!-- Ayırıcı Çizgi: Profil bölümü ve yorum arasına çizgi ekler -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="@color/white"
+            android:baselineAligned="false" />
+
+        <!-- Kullanıcı Yorumu: Kullanıcının kitap hakkında yaptığı yorumu gösterir -->
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="8dp"
+            android:text="This is a sample comment about the book. It will be  after a few lines if it exceeds the maximum length."
+            android:textColor="#CCCCCC"
+            android:textSize="14sp" />
+
+        <!-- Kitap Bölümü: Kitap resmi ve kitap adı bilgilerini içerir -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Book Cover Picture -->
+            <ImageView
+                android:id="@+id/bookpicture"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/book01" />
+
+            <!-- Kitap Kapağı Resmi: Kitaba ait kapak resmini gösterir -->
+            <TextView
+                android:id="@+id/bookname_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/bookpicture"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/bookpicture"
+                android:text="Book Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!-- like ve comment kısımları -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

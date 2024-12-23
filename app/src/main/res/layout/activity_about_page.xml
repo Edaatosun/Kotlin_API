@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Top Bar Section -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"
+            android:background="@color/transparent"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Hakkımızda"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <!-- Introductory Text -->
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bizimle, geleceğe güvenle adım atın. Bu uygulama, kullanıcılarımıza çeşitli hizmetler sunmak ve onların hayatını kolaylaştırmak amacıyla tasarlanmıştır. Amacımız, tüm süreçleri basit, hızlı ve güvenilir bir şekilde sunmaktır."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="6dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="12dp"/>
+
+            <!-- Features Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Öne Çıkan Özellikler"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <!-- Features List -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Kolay erişilebilir arayüz, her yaş grubuna uygun."
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Hızlı ve güvenli işlemler, verilerinizi her zaman güvende tutar."
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Kullanıcı dostu deneyim, uygulama ile ilgili her şey elinizin altında."
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <!-- Contact Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bize Ulaşın"
+                android:textSize="18sp"
+                android:textColor="#444444"
+                android:layout_marginTop="32dp"
+                android:textStyle="bold"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sorularınız veya önerileriniz için bizimle iletişime geçebilirsiniz."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

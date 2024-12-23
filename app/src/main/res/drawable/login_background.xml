@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- renk gecisi icin gradient kullanılır -->
+    <!-- angle açısını belirler 0-360  -->
+    <gradient
+        android:type="linear"
+        android:angle="100"
+        android:startColor="#3446E6"
+        android:endColor="#EF2F2F"/>
+
+</shape>

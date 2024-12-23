@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_fav"
+            android:title="Favorilerim"/>
+
+        <item
+            android:id="@+id/nav_acount"
+            android:icon="@drawable/icon_login_account"
+            android:title="Profilim"/>
+
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/ic_book"
+            android:title="Kitaplar"/>
+        <item
+            android:id="@+id/action_will_read_list"
+            android:icon="@drawable/ic_will_read_list"
+            android:title="Okunacak Listesi" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/logo"
+            android:title="BeKitap Hakkında"/>
+
+
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>

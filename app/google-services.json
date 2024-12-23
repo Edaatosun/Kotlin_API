@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99658670959",
+    "project_id": "bookappkotlin-ba0eb",
+    "storage_bucket": "bookappkotlin-ba0eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99658670959:android:9f6593e1c0b8e54f5ffe9a",
+        "android_client_info": {
+          "package_name": "com.eda.bookapp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdEgTNiwSCMz5jlag7snYdz7U7OfphXEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

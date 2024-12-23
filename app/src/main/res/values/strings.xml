@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BeKitap</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="favourites">Favourites</string>
+    <string name="about_app">About App</string>
+
+</resources>

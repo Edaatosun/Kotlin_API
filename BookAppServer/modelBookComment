@@ -1,0 +1,34 @@
+
+const mongoose = require('mongoose');
+
+mongoose.connect("mongodb://localhost/app").then(_=>{
+    console.log("veritabına bağlandı");
+}).catch(err =>{
+    console.log("bağlantı hatası"+err);
+});
+
+const Schema = mongoose.Schema;
+
+const commentSchema2 = new Schema({
+    commentModelId:{
+        type:String, 
+        required:true
+    },
+    username:{
+        type:String, 
+        required:true
+    },
+    commentText:{
+        type:String, 
+        required:true
+    },
+    
+
+},{collection : 'comments2', timestamps : true});
+
+const comment2 = mongoose.model("comment2",commentSchema2);
+module.exports = comment2;
+
+
+
+
